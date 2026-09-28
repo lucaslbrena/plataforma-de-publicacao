@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "http",
-        hostname: "localhost",
+        hostname: "raw.githubusercontent.com",
         port: "3000",
         pathname: "/**",
         search: "",
