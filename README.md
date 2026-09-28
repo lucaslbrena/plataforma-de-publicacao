@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 Plataforma Editorial & Publicação Digital
 
-## Getting Started
+> Plataforma full stack para gestão editorial, moderação de conteúdos e publicação digital, desenvolvida com foco em **tipagem estrita de ponta a ponta (Type-Safe)**, arquitetura orientada a componentes e persistência relacional com **Drizzle ORM**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🏛️ Visão Geral da Arquitetura
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação foi concebida unificando o ecossistema moderno de desenvolvimento web com Next.js, tirando partido de renderização otimizada, rotas de API protegidas e uma camada de dados sem sobrecarga de runtime:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frontend & Renderização:** Interface desenvolvida em **Next.js (React)** com componentes reutilizáveis, Tailwind CSS para estilização consistente e consumo de dados assíncrono.
+* **Camada de Dados & Persistência:** Gestão de base de dados relacional com **Drizzle ORM**, garantindo esquemas tipados, migrações controladas e consultas diretas em SQL sem overhead.
+* **Segurança & Controlo de Acessos:** Painel de gestão editorial protegido, com validação de entradas e controlo de estados de publicação.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Funcionalidades Principais
 
-To learn more about Next.js, take a look at the following resources:
+* **Portal Público de Notícias / Artigos:**
+  * Listagem dinâmica com metadados editoriais, data de publicação e ativos visuais.
+  * Renderização otimizada para carregamento rápido e consumo leve de dados.
+* **Painel Administrativo & Gestão Editorial:**
+  * Fluxo completo de criação, edição, publicação e remoção de matérias (CRUD).
+  * Associação de imagens de capa e metadados estruturados.
+  * Gestão de estados de conteúdo para moderação editorial.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Stack Tecnológica
 
-## Deploy on Vercel
+| Camada | Tecnologias |
+|---|---|
+| **Ambiente Full Stack** | Next.js, React, TypeScript |
+| **Camada de Dados (ORM)**| Drizzle ORM |
+| **Bases de Dados** | SQLite (desenvolvimento local) / PostgreSQL |
+| **Estilização & UI** | Tailwind CSS, PostCSS |
+| **Qualidade & Padrões** | ESLint, Prettier, TypeScript Strict Mode |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Como Executar o Projeto Localmente
+
+### Pré-requisitos
+* Node.js (versão 18.x ou superior)
+* npm, yarn ou pnpm
+
+### Passos de Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone git@github.com:lucaslbrena/plataforma-de-publicacao.git
+   cd plataforma-de-publicacao
