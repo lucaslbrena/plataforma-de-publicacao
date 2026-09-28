@@ -1,14 +1,27 @@
-import { drizzle } from "drizzle-orm/better-sqlite3";
+import { neon } from "@neondatabase/serverless";
+import { drizzle } from "drizzle-orm/neon-http";
 import { postsTable } from "./schemas";
-import Database from "better-sqlite3";
-import { resolve } from "path";
 
-const sqliteDatabasePath = resolve(process.cwd(), "db.sqlite3");
-const sqliteDatabase = new Database(sqliteDatabasePath);
+const sql = neon(process.env.DATABASE_URL!);
 
-export const drizzleDb = drizzle(sqliteDatabase, {
+export const drizzleDb = drizzle(sql, {
   schema: {
     posts: postsTable,
   },
   logger: true,
 });
+
+// import { drizzle } from "drizzle-orm/better-sqlite3";
+// import { postsTable } from "./schemas";
+// import Database from "better-sqlite3";
+// import { resolve } from "path";
+
+// const sqliteDatabasePath = resolve(process.cwd(), "db.sqlite3");
+// const sqliteDatabase = new Database(sqliteDatabasePath);
+
+// export const drizzleDb = drizzle(sqliteDatabase, {
+//   schema: {
+//     posts: postsTable,
+//   },
+//   logger: true,
+// });
