@@ -8,7 +8,7 @@ export default function Footer() {
           Copyright &copy;
           {new Date().getFullYear()} -
         </span>
-        <Link href="/">The Blog</Link>
+        <Link href="/">Brena | Tech Insights</Link>
       </p>
     </footer>
   );

@@ -7,10 +7,11 @@ import { ToastifyContainer } from "@/components/ToastifyContainer";
 
 export const metadata: Metadata = {
   title: {
-    default: "The Blog - Este é o blog do Lucas Brena",
-    template: "%s | Lucas Blog",
+    default: "Tech Insights by Lucas",
+    template: "%s | Brena | Tech Insights",
   },
-  description: "Este é o blog do Lucas Brena",
+  description:
+    "Brena Tech Insights is a blog about technology, programming, and software development.",
 };
 type RootLayoutProps = {
   children: React.ReactNode;
