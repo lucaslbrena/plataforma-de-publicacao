@@ -10,7 +10,7 @@ A aplicação foi concebida unificando o ecossistema moderno de desenvolvimento 
 
 * **Frontend & Renderização:** Interface desenvolvida em **Next.js (React)** com componentes reutilizáveis, Tailwind CSS para estilização consistente e consumo de dados assíncrono.
 * **Camada de Dados & Persistência:** Gestão de base de dados relacional com **Drizzle ORM**, garantindo esquemas tipados, migrações controladas e consultas diretas em SQL sem overhead.
-* **Segurança & Controlo de Acessos:** Painel de gestão editorial protegido, com validação de entradas e controlo de estados de publicação.
+* **Segurança & Controle de Acessos:** Painel de gestão editorial protegido, com validação de entradas e Controle de estados de publicação.
 
 ---
 
